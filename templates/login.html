@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+  
+  <div class="signup-login">
+    <div class="signup-box1">
+
+      <form method="post">
+        {% csrf_token %}
+        <div class="heading">
+          Login
+        </div>
+        <div class="line"></div>
+        
+
+        <div class="field">
+          <b>Username</b>
+
+          <input class="inp" type="text" name="fnm" required placeholder="Enter Your Username">
+        </div>
+
+        <div class="field">
+          <b>Password</b>
+
+          <input class="inp" type="password" name="pwd" required placeholder="Enter Password">
+        </div>
+
+        <div class="field">
+          <input class="submit-button" type="submit" value="Login">
+        </div>
+        <div class="line"></div>
+        <div class="field">
+          <b style="margin-left:130px;">Don't have an account? </b>
+          <br>
+          <a class="anc" href="{% url 'sign-up' %}">Signup</a>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+{% endblock %}

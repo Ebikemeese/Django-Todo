@@ -15,11 +15,10 @@ This project is a multi-user todo application built using Django. It allows user
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/Ebikemeese/Django-Todo.git`
-2. Navigate to the project directory: `cd todo`
-3. Install dependencies: `pip install django`
-4. Set up the database: `python manage.py makemigrations`and `python manage.py migrate`
-5. Create a superuser for admin access: `python manage.py createsuperuser`
-6. Start the development server: `python manage.py runserver`
+2. Install dependencies: `pip install django`
+3. Set up the database: `python manage.py makemigrations`and `python manage.py migrate`
+4. Create a superuser for admin access: `python manage.py createsuperuser`
+5. Start the development server: `python manage.py runserver`
 
 ## Usage
 1. Access the application through your browser at `http://127.0.0.1:8000/`

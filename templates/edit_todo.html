@@ -10,7 +10,7 @@
             <div class="heading">Get Things Done?</div>
             <form method="post">
                 {% csrf_token %}
-                <input type="text" name="title" required class="todo-input inp" placeholder="What is the task today?" value={{obj.title}}>
+                <input type="text" name="title" required class="todo-input inp" placeholder="What is the task today?" value="{{ obj.title }}">
                 <input type="hidden" name="srno" value={{obj.srno}}>
                 
                 <input class="submit-button" type="submit" value="Update Task">
